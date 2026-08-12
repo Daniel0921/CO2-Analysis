@@ -78,35 +78,6 @@ The confusion matrix shows why accuracy alone is insufficient: the small test se
 
 This classifier is intentionally presented as an **exploratory proof of concept**, not a production forecasting model.
 
-## Repository structure
-
-```text
-co2-sector-analytics-portfolio/
-├── README.md
-├── run_all.R
-├── .gitignore
-├── data/
-│   ├── README.md
-│   ├── raw/
-│   │   └── CO2_Analysis.csv        # add source data here
-│   └── processed/
-│       ├── CO2_BiYearly_Sector_Summary.csv
-│       └── H1_H2_Percentage_Change_Data.csv
-├── scripts/
-│   ├── 00_install_packages.R
-│   ├── 01_data_quality_audit.R
-│   ├── 02_biyearly_statistical_summary.R
-│   ├── 03_data_visualization_suite.R
-│   └── 04_machine_learning_models.R
-├── outputs/
-│   ├── visualizations/
-│   └── machine_learning/
-└── docs/
-    ├── METHODOLOGY.md
-    ├── MODEL_RESULTS.md
-    └── UPWORK_PROJECT_DESCRIPTION.txt
-```
-
 ## Requirements
 
 R packages used:
