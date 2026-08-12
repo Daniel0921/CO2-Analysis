@@ -78,44 +78,6 @@ The confusion matrix shows why accuracy alone is insufficient: the small test se
 
 This classifier is intentionally presented as an **exploratory proof of concept**, not a production forecasting model.
 
-## Requirements
-
-R packages used:
-
-- dplyr
-- tidyr
-- lubridate
-- ggplot2
-- randomForest
-- pROC
-- scales
-
-Install them with:
-
-```r
-source("scripts/00_install_packages.R")
-```
-
-## Running the project
-
-1. Clone or download the repository.
-2. Place the source CSV at:
-
-```text
-data/raw/CO2_Analysis.csv
-```
-
-3. Open R or RStudio with the repository root as the working directory.
-4. Install dependencies if necessary.
-5. Run:
-
-```r
-source("run_all.R")
-```
-
-The project will regenerate processed analytical tables, visualizations, and machine-learning outputs.
-
 ## Notes on interpretation
 
 This project is a portfolio analysis and learning exercise. The Random Forest uses a reproducible random observation-level train/test split rather than a temporal holdout, and the Logistic Regression uses a small aggregated H1/H2 dataset. Results are therefore interpreted as exploratory analytical evidence rather than production forecasting performance.
-
